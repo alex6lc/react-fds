@@ -1,0 +1,39 @@
+#react {
+
+$lineHeight: 24px;
+$initTop: 2.5px;
+$maxNbLine: 25;
+
+.rel {
+  position: relative;
+  overflow: hidden;
+}
+
+@for $i from 1 through $maxNbLine {
+  @for $c from 1 through $maxNbLine {
+    @if $i <= $c {
+      .hide-line-#{$i}-to-#{$c} {
+        position: absolute;
+        width: 90%;
+        height: $lineHeight * ($c - $i  + 1);
+        top: $initTop + ($lineHeight * $i);
+        left: 5%;
+        background: rgba(63,63,63,0.8);
+      }
+    }
+  }
+}
+
+pre {
+  margin: 20px auto 0 auto;
+}
+
+pre code {
+  max-height: 600px;
+}
+
+.javascript .xml {
+  opacity: 1;
+}
+
+}

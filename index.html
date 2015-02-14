@@ -1,0 +1,222 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+
+    <title>React - Foire du savoir</title>
+
+    <meta name="description" content="">
+    <meta name="author" content="Alexis L-C (@alex6lc)">
+
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"/>
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+    <link rel="stylesheet" href="css/reveal.min.css">
+    <link rel="stylesheet" href="css/theme/black.css" id="theme">
+
+    <!-- Code syntax highlighting -->
+    <link rel="stylesheet" href="lib/css/zenburn.css">
+    
+
+    <!-- Printing and PDF exports -->
+    <script>
+        var link = document.createElement('link');
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        link.href = window.location.search.match(/print-pdf/gi) ? 'css/print/pdf.css' : 'css/print/paper.css';
+        document.getElementsByTagName('head')[0].appendChild(link);
+    </script>
+</head>
+
+<body>
+
+<div id="react" class="reveal">
+
+    <!-- Any section element inside of this container is displayed as a slide -->
+    <div class="slides">
+        <section>
+            <h1>Reveal.js</h1>
+
+            <h3>The HTML Presentation Framework</h3>
+
+            <p>
+                <small>Created by <a href="http://hakim.se">Hakim El Hattab</a> / <a href="http://twitter.com/hakimel">@hakimel</a>
+                </small>
+            </p>
+        </section>
+
+        <section>
+            <h2>Arrow functions</h2>
+
+            <div class="row">
+                <div class="col-xs">
+                    <p>ECMAScript 3/5</p>
+                    <pre><code data-trim class="javascript">
+function Person() {
+  var that = this;
+  that.age = 0;
+
+  setInterval(function() {
+    that.age++;
+  }, 1000);
+}
+                    </code></pre>
+                </div>
+                <div class="col-xs">
+                    <p>ECMAScript 6</p>
+                    <pre><code data-trim class="javascript">
+function Person() {
+  this.age = 0;
+
+  setInterval(() => {
+    this.age++;
+  }, 1000);
+}
+                    </code></pre>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Method Definitions</h2>
+
+            <div class="row">
+                <div class="col-xs">
+                    <p>ECMAScript 3/5</p>
+                    <pre><code data-trim class="javascript">
+var Person = Model.extend({
+  run: function (distance) {
+    //...
+  }
+});
+                    </code></pre>
+                </div>
+                <div class="col-xs">
+                    <p>ECMAScript 6</p>
+                    <pre><code data-trim class="javascript">
+var Person = Model.extend({
+  run(distance) {
+    //...
+  }
+});
+                    </code></pre>
+                </div>
+            </div>
+            <aside class="notes">
+                This slide has fragments which are also stepped through in the notes window.
+            </aside>
+        </section>
+        
+        <section>
+            <h2>Anatomy of a React Application</h2>
+        </section>
+
+        <section>
+            <div class="rel">
+                <pre><code data-trim class="javascript">
+var React = require('react');
+
+var DashboardCallInfo = React.createClass({
+  render() {
+    return (
+      &lt;section className="dashboard-info"&gt;
+        &lt;div className="call-info"&gt;
+          ..
+          &lt;div className="label-progess"&gt;..&lt;/div&gt;
+          &lt;div className="icon-message"&gt;..&lt;/div&gt;
+        &lt;/div&gt;
+        &lt;hr&gt;
+        &lt;address className="store-address"&gt;..&lt;/address&gt;
+        &lt;ul className="store-additional-infos"&gt;..&lt;/ul&gt;
+        &lt;hr&gt;
+        ..
+      &lt;/section&gt;
+    );
+  }
+});
+                </code></pre>
+                <span class="fragment current-visible hide-line-2-to-25"></span>
+                <span class="fragment current-visible">
+                    <span class="hide-line-1-to-2"></span>
+                    <span class="hide-line-4-to-25"></span>
+                </span>
+                <span class="fragment current-visible">
+                    <span class="hide-line-1-to-3"></span>
+                    <span class="hide-line-5-to-25"></span>
+                </span>
+                <span class="fragment current-visible">
+                    <span class="hide-line-1-to-4"></span>
+                    <span class="hide-line-19-to-25"></span>
+                </span>
+                <div class="fragment"></div>
+            </div>
+            <aside class="notes">
+                This slide has fragments which are also stepped through in the notes window.
+            </aside>
+        </section>
+
+        <section>
+            <section id="fragments">
+                <h2>Fragments</h2>
+
+                <p>Hit the next arrow...</p>
+
+                <p class="fragment">... to step through ...</p>
+
+                <p><span class="fragment">... a</span> <span class="fragment">fragmented</span> <span class="fragment">slide.</span>
+                </p>
+
+            </section>
+            <section>
+                <h2>Fragment Styles</h2>
+
+                <p>There's different types of fragments, like:</p>
+
+                <p class="fragment grow">grow</p>
+
+                <p class="fragment shrink">shrink</p>
+
+                <p class="fragment roll-in">roll-in</p>
+
+                <p class="fragment fade-out">fade-out</p>
+
+                <p class="fragment current-visible">current-visible</p>
+
+                <p class="fragment highlight-red">highlight-red</p>
+
+                <p class="fragment highlight-blue">highlight-blue</p>
+            </section>
+        </section>
+    </div>
+</div>
+
+<script src="lib/js/head.min.js"></script>
+<script src="js/reveal.js"></script>
+
+<script>
+
+    // Full list of configuration options available at:
+    // https://github.com/hakimel/reveal.js#configuration
+    Reveal.initialize({
+        controls: true,
+        progress: true,
+        history: true,
+        center: true,
+
+        transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+        // Optional reveal.js plugins
+        dependencies: [{ src: 'lib/js/classList.js', condition: function () { return !document.body.classList; } },
+                       { src: 'plugin/highlight/highlight.js', async: true, condition: function () { return !!document.querySelector('pre code'); }, callback: function () { hljs.initHighlightingOnLoad(); } },
+                       { src: 'plugin/notes/notes.js', async: true }
+                      ]
+    });
+
+</script>
+
+</body>
+</html>
