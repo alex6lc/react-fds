@@ -31,6 +31,7 @@ module.exports = React.createClass({
                 <MethodDefinitions />
                 <ArrowFunctions />
                 <DemoSearchInList />
+                <AnatomyReact />
                 <AnatomyReact2 />
             </div>
         );
