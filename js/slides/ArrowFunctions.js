@@ -1,5 +1,5 @@
 var React = require('react');
-var codePreview = require('../mixings/codePreview');
+var CodeEditor = require('../components/CodeEditor');
 
 var es5code = `
 function Person() {
@@ -20,8 +20,6 @@ function Person() {
 }`;
 
 module.exports = React.createClass({
-    mixins: [codePreview],
-    
     render() {
         return (
             <section>
@@ -30,11 +28,11 @@ module.exports = React.createClass({
                 <div className="row">
                     <div className="col-xs">
                         <p>ECMAScript 3/5</p>
-                        <pre><code data-trim className="javascript">{es5code}</code></pre>
+                        <CodeEditor language="javascript" codeText={es5code} />
                     </div>
                     <div className="col-xs">
                         <p>ECMAScript 6</p>
-                        <pre><code data-trim className="javascript">{es6code}</code></pre>
+                        <CodeEditor language="javascript" codeText={es6code} />
                     </div>
                 </div>
             </section>

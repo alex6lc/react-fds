@@ -59,7 +59,7 @@ var Playground = React.createClass({
         return (
             <div className="playground">
                 <div className="playgroundCode">
-                    <CodeEditor key="jsx" className="playgroundStage" onChange={this.handleCodeChange} codeText={this.state.code} />
+                    <CodeEditor key="jsx" language="javascript" editable={true} onChange={this.handleCodeChange} codeText={this.state.code} />
                 </div>
                 <div className="playgroundPreview">
                     <div ref="mount">{Error}</div>

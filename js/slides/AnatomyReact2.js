@@ -1,5 +1,5 @@
 var React = require('react');
-var codePreview = require('../mixings/codePreview');
+var CodeEditor = require('../components/CodeEditor');
 
 var code = `
 var React = require('react');
@@ -25,13 +25,11 @@ var DashboardCallInfo = React.createClass({
 `;
 
 module.exports = React.createClass({
-    mixins: [codePreview],
-
     render() {
         return (
             <section>
                 <div className="rel">
-                    <pre><code data-trim className="javascript">{code}</code></pre>
+                    <CodeEditor language="javascript" codeText={code} />
                     <span className="fragment current-visible hide-line-2-to-25"></span>
                     <span className="fragment current-visible">
                         <span className="hide-line-1-to-2"></span>
