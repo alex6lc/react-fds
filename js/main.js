@@ -1,6 +1,6 @@
 var React = require('react');
 var hljs = require('highlight.js');
-var ReactPlayground = require('./live_editor.js');
+var ReactPlayground = require('./components/Playground.js');
 
 
 // Full list of configuration options available at:

@@ -1,6 +1,8 @@
 /* global module:false */
 module.exports = function (grunt) {
+    var webpackConfig = require("./webpack.config.js");
     var port = grunt.option('port') || 8000;
+
     // Project configuration
     grunt.initConfig({
         pkg: grunt.file.readJSON('package.json'),
@@ -100,6 +102,7 @@ module.exports = function (grunt) {
             }
         },
         webpack: {
+            options: webpackConfig,
             build: {
                 // webpack options
                 entry: './js/main.js',
