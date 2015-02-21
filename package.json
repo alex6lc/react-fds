@@ -22,6 +22,7 @@
   },
   "dependencies": {
     "express": "~2.5.9",
+    "highlight.js": "^8.4.0",
     "mustache": "~0.7.2",
     "react": "^0.12.2",
     "socket.io": "~0.9.16",
