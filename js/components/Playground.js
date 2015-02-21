@@ -1,6 +1,6 @@
 var React = require('react');
 var CodeEditor = require('../components/CodeEditor');
-var selfCleaningTimeout = require('../mixings/selfCleaningTimeout');
+var selfCleaningTimeout = require('../mixins/selfCleaningTimeout');
 
 var Playground = React.createClass({
     displayName: 'Playground',
