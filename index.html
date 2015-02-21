@@ -18,6 +18,15 @@
     <link rel="stylesheet" href="css/reveal.min.css">
     <link rel="stylesheet" href="css/theme/black.css" id="theme">
 
+    <link rel="stylesheet" href="css/poole.css">
+    <link rel="stylesheet" href="css/syntax.css">
+    <link rel="stylesheet" href="css/theme.css?3">
+
+    <link rel="stylesheet" href="css/syntax.css">
+    <link rel="stylesheet" href="css/codemirror.css">
+    <link rel="stylesheet" href="css/playground.css">
+    <link rel="stylesheet" href="css/playgroundPreview.css">
+
     <!-- Code syntax highlighting -->
     <link rel="stylesheet" href="lib/css/zenburn.css">
     
@@ -191,12 +200,29 @@ var DashboardCallInfo = React.createClass({
                 <p class="fragment highlight-blue">highlight-blue</p>
             </section>
         </section>
+        <section>
+            <div id="example"></div>
+        </section>
     </div>
+
 </div>
 
 <script src="lib/js/head.min.js"></script>
 <script src="js/reveal.js"></script>
-
+<script src="js/codemirror.js"></script>
+<script src="js/javascript.js"></script>
+<script src="js/react.js"></script>
+<script src="js/JSXTransformer.js"></script>
+<script src="js/ReactHotAPI.js"></script>
+<script src="js/live_editor.js"></script>
+<script src="js/tweenState.js"></script>
+<script>
+    var HELLO_COMPONENT = "// YOU ARE THE JAVASCRIPT GOD.\n\n// Remove libraries from the list until the perfect stack emerges.\n// (Hint: don't take this too far. We'll need a few for the demo!)\n\nvar BEST_JS_LIBS = [\n  { name: 'Backbone.js', url: 'http://backbonejs.org/'},\n  { name: 'AngularJS', url: 'https://angularjs.org/'},\n  { name: 'jQuery', url: 'http://jquery.com/'},\n  { name: 'Prototype', url: 'http://www.prototypejs.org/'},\n  { name: 'React', url: 'http://facebook.github.io/react/'},\n  { name: 'Ember', url: 'http://emberjs.com/'},\n  { name: 'Knockout.js', url: 'http://knockoutjs.com/'},\n  { name: 'Dojo', url: 'http://dojotoolkit.org/'},\n  { name: 'Mootools', url: 'http://mootools.net/'},\n  { name: 'Underscore', url: 'http://underscorejs.org/'},\n  { name: 'Lodash', url: 'http://lodash.com/'},\n  { name: 'Moment', url: 'http://momentjs.com/'},\n  { name: 'Express', url: 'http://expressjs.com/'},\n  { name: 'Koa', url: 'http://koajs.com/'}\n];\n\n// Let's make this more fun.\n\n// First, type “rx” into the input to the right.\n// Have you typed “rx” there? True-true? Then uncomment this line:\n\n// BEST_JS_LIBS.push({ name: 'Rx', url: 'http://reactivex.io/' });\n\nmodule.exports = React.createClass({\n  getInitialState() { return { query: '' }; },\n\n  handleChange(e) {\n    this.setState({ query: e.target.value });\n\n    // Feel like debugging something?\n    // Open DevTools and uncomment next line:\n\n    // console.log(e); debugger;\n\n    // Now type something into the input.\n    // Nice, huh? Remove this line so we can move on.\n  },\n\n  componentWillUnmount() {\n    alert('I knew Dan lied about hot reloading.');\n  },\n\n  render() {\n    var libs = BEST_JS_LIBS,\n        query = this.state.query.trim().toLowerCase();\n\n    // For the next bits of fun, make sure you\n    // have typed something into the input!\n\n    if (query.length > 0) {\n      libs = libs.filter(\n        // Feeling lucky? Try swapping these lines:\n        // () => Math.random() > 0.5\n        lib => lib.name.toLowerCase().match(query)\n      );\n    }\n\n    // You know what to do:\n    // return <i>{libs.map(l => l.name).join(', ')} are friends!</i>;\n\n    return (\n      <div>\n        <input type='text' // try 'date'\n               value={this.state.query/*.toUpperCase()*/}\n               onChange={this.handleChange}\n               // onMouseEnter={() => this.setState({ query: 'react' })}\n               placeholder='Type to search' />\n        <ul>\n          {libs.map(lib =>\n            <li key={lib.name}>\n              <a href={lib.url} target='_blank'>\n              {\n                // 'Such ' +\n                lib.name\n              }\n              </a>\n            </li>\n          )}\n        </ul>\n        {\n          // libs.length === 0 && <i>Empty!</i>\n        }\n      </div>\n    );\n  }\n});";
+    React.render(
+            React.createElement(ReactPlayground, {codeText: HELLO_COMPONENT}),
+            document.getElementById('example')
+    );
+</script>
 <script>
 
     // Full list of configuration options available at:
