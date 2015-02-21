@@ -1,3 +1,5 @@
+var React = require('react');
+
 var CodeMirrorEditor = React.createClass({displayName: 'CodeMirrorEditor',
     componentDidMount: function() {
         hljs.highlightBlock(this.refs.editor.getDOMNode());
@@ -152,3 +154,5 @@ var ReactPlayground = React.createClass({displayName: 'ReactPlayground',
         }
     }
 });
+
+module.exports = ReactPlayground;

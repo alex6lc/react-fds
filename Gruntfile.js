@@ -84,8 +84,8 @@ module.exports = function (grunt) {
                 livereload: true
             },
             js: {
-                files: ['Gruntfile.js', 'js/reveal.js'],
-                tasks: 'js'
+                files: ['Gruntfile.js', 'js/**/*.js'],
+                tasks: 'webpack'
             },
             theme: {
                 files: ['css/theme/source/*.scss', 'css/theme/template/*.scss'],
@@ -97,6 +97,16 @@ module.exports = function (grunt) {
             },
             html: {
                 files: ['index.html']
+            }
+        },
+        webpack: {
+            build: {
+                // webpack options
+                entry: './js/main.js',
+                output: {
+                    path: 'dist/',
+                    filename: 'main.min.js'
+                }
             }
         }
 
