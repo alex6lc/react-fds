@@ -2,11 +2,19 @@ var React = require('react');
 var Reveal = require('../reveal');
 
 var Intro = require('../slides/Intro');
+var WhatIsReact = require('../slides/WhatIsReact');
 var DemoSearchInList = require('../slides/DemoSearchInList');
 var MethodDefinitions = require('../slides/MethodDefinitions');
 var ArrowFunctions = require('../slides/ArrowFunctions');
 var AnatomyReact = require('../slides/AnatomyReact');
 var AnatomyReact2 = require('../slides/AnatomyReact2');
+var SinglePageApplication = require('../slides/SinglePageApplication');
+var ComponentsNotTemplates = require('../slides/ComponentsNotTemplates');
+
+/*
+
+ */
+
 
 module.exports = React.createClass({
     componentDidMount() {
@@ -30,9 +38,12 @@ module.exports = React.createClass({
                 <Intro />
                 <MethodDefinitions />
                 <ArrowFunctions />
+                <WhatIsReact />
                 <DemoSearchInList />
                 <AnatomyReact />
                 <AnatomyReact2 />
+                <SinglePageApplication />
+                <ComponentsNotTemplates />
             </div>
         );
     }

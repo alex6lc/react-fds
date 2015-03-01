@@ -29,7 +29,7 @@ module.exports = React.createClass({
         return (
             <section>
                 <div className="rel">
-                    <CodeEditor language="javascript" codeText={code} />
+                    <CodeEditor editable={true} language="javascript" codeText={code} />
                     <span className="fragment current-visible hide-line-2-to-25"></span>
                     <span className="fragment current-visible">
                         <span className="hide-line-1-to-2"></span>
