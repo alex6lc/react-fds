@@ -95,7 +95,7 @@ module.exports = function (grunt) {
             },
             css: {
                 files: ['css/reveal.scss', 'css/custom.scss'],
-                tasks: 'css-core'
+                tasks: 'css'
             },
             html: {
                 files: ['index.html']

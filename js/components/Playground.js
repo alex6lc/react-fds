@@ -57,12 +57,13 @@ var Playground = React.createClass({
         var Error = this.state.error ? <div className="playgroundError">{this.state.error}</div> : '';
 
         return (
-            <div className="playground">
-                <div className="playgroundCode">
+            <div className="row">
+                <div className="col-xs-10">
                     <CodeEditor key="jsx" language="javascript" editable={true} onChange={this.handleCodeChange} codeText={this.state.code} />
                 </div>
-                <div className="playgroundPreview">
-                    <div ref="mount">{Error}</div>
+                <div className="col-xs-2">
+                    <div ref="mount"></div>
+                    {Error}
                 </div>
             </div>
         );

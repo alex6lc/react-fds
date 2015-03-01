@@ -55,7 +55,7 @@ var CodeEditor = React.createClass({
 
     render() {
         return (
-            <pre onKeyUp={this.handleChange} onBlur={this.handleBlur} onFocus={this.handleFocus}>
+            <pre onInput={this.handleChange} onBlur={this.handleBlur} onFocus={this.handleFocus}>
                 <code ref="editor" className={this.props.language} contentEditable={this.props.editable}>{this.props.codeText}</code>
             </pre>
         );

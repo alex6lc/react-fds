@@ -4,12 +4,11 @@ var Reveal = require('../reveal');
 var Intro = require('../slides/Intro');
 var WhatIsReact = require('../slides/WhatIsReact');
 var DemoSearchInList = require('../slides/DemoSearchInList');
-var MethodDefinitions = require('../slides/MethodDefinitions');
-var ArrowFunctions = require('../slides/ArrowFunctions');
 var AnatomyReact = require('../slides/AnatomyReact');
 var AnatomyReact2 = require('../slides/AnatomyReact2');
 var SinglePageApplication = require('../slides/SinglePageApplication');
 var ComponentsNotTemplates = require('../slides/ComponentsNotTemplates');
+var ES6 = require('../slides/ES6');
 
 /*
 
@@ -36,8 +35,7 @@ module.exports = React.createClass({
         return (
             <div className="slides">
                 <Intro />
-                <MethodDefinitions />
-                <ArrowFunctions />
+                <ES6 />
                 <WhatIsReact />
                 <DemoSearchInList />
                 <AnatomyReact />
