@@ -9,6 +9,7 @@ var AnatomyReact2 = require('../slides/AnatomyReact2');
 var SinglePageApplication = require('../slides/SinglePageApplication');
 var ComponentsNotTemplates = require('../slides/ComponentsNotTemplates');
 var ES6 = require('../slides/ES6');
+var DemoDomDiff = require('../slides/DemoDomDiff');
 
 /*
 
@@ -42,6 +43,7 @@ module.exports = React.createClass({
                 <AnatomyReact2 />
                 <SinglePageApplication />
                 <ComponentsNotTemplates />
+                <DemoDomDiff />
             </div>
         );
     }

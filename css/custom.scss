@@ -1,39 +1,68 @@
 #react {
 
-$lineHeight: 24px;
-$initTop: 2.5px;
-$maxNbLine: 25;
+  $lineHeight: 24px;
+  $initTop: 2.5px;
+  $maxNbLine: 25;
 
-.rel {
-  position: relative;
-  overflow: hidden;
-}
+  .rel {
+    position: relative;
+    overflow: hidden;
+  }
 
-@for $i from 1 through $maxNbLine {
-  @for $c from 1 through $maxNbLine {
-    @if $i <= $c {
-      .hide-line-#{$i}-to-#{$c} {
-        position: absolute;
-        width: 90%;
-        height: $lineHeight * ($c - $i  + 1);
-        top: $initTop + ($lineHeight * $i);
-        left: 5%;
-        background: rgba(63,63,63,0.8);
+  @for $i from 1 through $maxNbLine {
+    @for $c from 1 through $maxNbLine {
+      @if $i <= $c {
+        .hide-line-#{$i}-to-#{$c} {
+          position: absolute;
+          width: 90%;
+          height: $lineHeight * ($c - $i  + 1);
+          top: $initTop + ($lineHeight * $i);
+          left: 5%;
+          background: rgba(63,63,63,0.8);
+        }
       }
     }
   }
-}
 
-pre {
-  margin: 20px auto 0 auto;
-}
+  pre {
+    margin: 20px auto 0 auto;
+  }
 
-pre code {
-  max-height: 600px;
-}
+  pre code {
+    font-size: 85%;
+    max-height: 600px;
+  }
 
-.javascript .xml {
-  opacity: 1;
-}
+  .javascript .xml {
+    opacity: 1;
+  }
+
+  .playground-preview {
+    margin: 20px auto 0 auto;
+    font-size: 80%;
+    width: 100%;
+
+    input {
+      font-size: 80%;
+      width: 100%;
+    }
+
+    button {
+      color: #fff;
+      display: inline-block;
+      padding: 6px 12px;
+      margin-bottom: 0;
+      font-size: 80%;
+      font-weight: 400;
+      text-align: center;
+      white-space: nowrap;
+      vertical-align: middle;
+      cursor: pointer;
+      user-select: none;
+      outline: none;
+      background-color: #337ab7;
+      border: 1px solid #2e6da4;
+    }
+  }
 
 }
