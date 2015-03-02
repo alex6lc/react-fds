@@ -4,13 +4,13 @@ module.exports = React.createClass({
     render() {
         return (
             <section>
-                <h1>Reveal.js</h1>
+                <img className="logo" src="images/react_logo.png" />
+                <h1>React</h1>
 
-                <h3>The HTML Presentation Framework</h3>
+                <h3>A JavaScript library for building user interfaces</h3>
 
                 <p>
-                    <small>Created by <a href="http://hakim.se">Hakim El Hattab</a> / <a href="http://twitter.com/hakimel">@hakimel</a>
-                    </small>
+                    <small>By Alexis Leroux-Chartré</small>
                 </p>
             </section>
         );
