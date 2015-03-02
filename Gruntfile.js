@@ -10,37 +10,37 @@ module.exports = function (grunt) {
         sass: {
             core: {
                 files: {
-                    'css/reveal.css': 'css/reveal.scss',
-                    'css/custom.css': 'css/custom.scss'
+                    'dist/css/reveal.css': 'css/reveal.scss',
+                    'dist/css/custom.css': 'css/custom.scss'
                 }
             },
             themes: {
                 files: {
-                    'css/theme/black.css': 'css/theme/source/black.scss',
-                    'css/theme/white.css': 'css/theme/source/white.scss',
-                    'css/theme/league.css': 'css/theme/source/league.scss',
-                    'css/theme/beige.css': 'css/theme/source/beige.scss',
-                    'css/theme/night.css': 'css/theme/source/night.scss',
-                    'css/theme/serif.css': 'css/theme/source/serif.scss',
-                    'css/theme/simple.css': 'css/theme/source/simple.scss',
-                    'css/theme/sky.css': 'css/theme/source/sky.scss',
-                    'css/theme/moon.css': 'css/theme/source/moon.scss',
-                    'css/theme/solarized.css': 'css/theme/source/solarized.scss',
-                    'css/theme/blood.css': 'css/theme/source/blood.scss'
+                    'dist/css/theme/black.css': 'css/theme/source/black.scss',
+                    'dist/css/theme/white.css': 'css/theme/source/white.scss',
+                    'dist/css/theme/league.css': 'css/theme/source/league.scss',
+                    'dist/css/theme/beige.css': 'css/theme/source/beige.scss',
+                    'dist/css/theme/night.css': 'css/theme/source/night.scss',
+                    'dist/css/theme/serif.css': 'css/theme/source/serif.scss',
+                    'dist/css/theme/simple.css': 'css/theme/source/simple.scss',
+                    'dist/css/theme/sky.css': 'css/theme/source/sky.scss',
+                    'dist/css/theme/moon.css': 'css/theme/source/moon.scss',
+                    'dist/css/theme/solarized.css': 'css/theme/source/solarized.scss',
+                    'dist/css/theme/blood.css': 'css/theme/source/blood.scss'
                 }
             }
         },
 
         autoprefixer: {
             dist: {
-                src: ['css/reveal.css', 'css/custom.css']
+                src: ['dist/css/reveal.css', 'dist/css/custom.css']
             }
         },
 
         cssmin: {
             compress: {
                 files: {
-                    'css/reveal.min.css': ['css/reveal.css', 'css/custom.css', 'css/flexboxgrid.css']
+                    'dist/css/reveal.min.css': ['dist/css/reveal.css', 'dist/css/custom.css', 'css/flexboxgrid.css']
                 }
             }
         },
