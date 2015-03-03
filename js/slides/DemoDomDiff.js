@@ -4,7 +4,7 @@ var Playground = require('../components/Playground');
 var demo = `
 module.exports = React.createClass({
   getInitialState() {
-    return { name: 'World'};
+    return { name: 'World' };
   },
   onChange(e) {
     this.setState({ name: e.target.value });

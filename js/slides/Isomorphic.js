@@ -4,7 +4,7 @@ module.exports = React.createClass({
     render() {
         return (
             <section>
-                <h2>Anatomy of a React Component</h2>
+                <h2>Isomorphic</h2>
             </section>
         );
     }
