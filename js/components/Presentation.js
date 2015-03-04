@@ -11,6 +11,7 @@ var ComponentsNotTemplates = require('../slides/ComponentsNotTemplates');
 var ES6 = require('../slides/ES6');
 
 // Virtual DOM
+var VirtualDomDiff = require('../slides/VirtualDomDiff');
 var DemoDomDiff = require('../slides/DemoDomDiff');
 
 // Isomorphic
@@ -51,6 +52,8 @@ module.exports = React.createClass({
                 <AnatomyReact />
                 <AnatomyReact2 />
                 <ComponentsNotTemplates />
+
+                <VirtualDomDiff />
                 <DemoDomDiff />
 
                 <Isomorphic />
