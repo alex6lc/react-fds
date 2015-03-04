@@ -16,9 +16,11 @@ module.exports = React.createClass({
         });
         return (
             <div className="row">
-                <div className="col-xs-10">
+                <div className="col-xs-1"></div>
+                <div className="col-xs-8">
                     <div className="box">{items}</div>
                 </div>
+                <div className="col-xs-1"></div>
                 <div className="col-xs-2">
                     <div>{this.props.location}</div>
                     {languages}
