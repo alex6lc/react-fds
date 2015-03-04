@@ -1,4 +1,10 @@
 module.exports = {
+    isomorphic: {
+        sepHeight: 50,
+
+        lineStrokeWidth: 1,
+        lineStrokeColor: '#3F3F3F'
+    },
     virtualDomDiff: {
         lineStrokeWidth: 4,
         lineStrokeColor: '#3F3F3F',
