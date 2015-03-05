@@ -1,16 +1,25 @@
 var React = require('react');
 var Reveal = require('../reveal');
 
+// Expose Reveal
+window.Reveal = Reveal;
+
 var Intro = require('../slides/Intro');
+var ES6 = require('../slides/ES6');
 var WhatIsReact = require('../slides/WhatIsReact');
 
 var DemoSearchInList = require('../slides/DemoSearchInList');
 var AnatomyReact = require('../slides/AnatomyReact');
 var AnatomyReact2 = require('../slides/AnatomyReact2');
+
+
 var ComponentsNotTemplates = require('../slides/ComponentsNotTemplates');
-var ES6 = require('../slides/ES6');
+var SeparationOfConcerns = require('../slides/SeparationOfConcerns');
+var HandlebarsAndView = require('../slides/HandlebarsAndView');
+var ReactComponent = require('../slides/ReactComponent');
 
 // Virtual DOM
+var VirtualDom = require('../slides/VirtualDom');
 var VirtualDomDiff = require('../slides/VirtualDomDiff');
 var DemoDomDiff = require('../slides/DemoDomDiff');
 
@@ -51,8 +60,13 @@ module.exports = React.createClass({
                 <DemoSearchInList />
                 <AnatomyReact />
                 <AnatomyReact2 />
-                <ComponentsNotTemplates />
 
+                <ComponentsNotTemplates />
+                <SeparationOfConcerns />
+                <HandlebarsAndView />
+                <ReactComponent />
+
+                <VirtualDom />
                 <VirtualDomDiff />
                 <DemoDomDiff />
 

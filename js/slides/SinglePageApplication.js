@@ -6,11 +6,9 @@ module.exports = React.createClass({
             <section>
                 <h2>Single Page Application</h2>
 
-                <ul>
-                    <li className="fragment">SEO</li>
-                    <li className="fragment">Performance</li>
-                    <li className="fragment">Maintainability</li>
-                </ul>
+                <p className="fragment">SEO</p>
+                <p className="fragment">Performance</p>
+                <p className="fragment">Maintainability</p>
             </section>
         );
     }
