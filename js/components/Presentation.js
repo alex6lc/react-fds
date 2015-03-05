@@ -23,6 +23,10 @@ var VirtualDom = require('../slides/VirtualDom');
 var VirtualDomDiff = require('../slides/VirtualDomDiff');
 var DemoDomDiff = require('../slides/DemoDomDiff');
 
+// Props and State
+var PropsAndState = require('../slides/PropsAndState');
+var UnidirectionalFlow = require('../slides/UnidirectionalFlow');
+
 // Isomorphic
 var Isomorphic = require('../slides/Isomorphic');
 var FatServerThinClient = require('../slides/FatServerThinClient');
@@ -69,6 +73,9 @@ module.exports = React.createClass({
                 <VirtualDom />
                 <VirtualDomDiff />
                 <DemoDomDiff />
+
+                <PropsAndState />
+                <UnidirectionalFlow />
 
                 <Isomorphic />
                 <FatServerThinClient />
