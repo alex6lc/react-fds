@@ -20,6 +20,8 @@ var ReactComponent = require('../slides/ReactComponent');
 
 // Virtual DOM
 var VirtualDom = require('../slides/VirtualDom');
+var DomManipulation1 = require('../slides/DomManipulation1');
+var DomManipulation2 = require('../slides/DomManipulation2');
 var VirtualDomDiff = require('../slides/VirtualDomDiff');
 var DemoDomDiff = require('../slides/DemoDomDiff');
 
@@ -71,6 +73,8 @@ module.exports = React.createClass({
                 <ReactComponent />
 
                 <VirtualDom />
+                <DomManipulation1 />
+                <DomManipulation2 />
                 <VirtualDomDiff />
                 <DemoDomDiff />
 
