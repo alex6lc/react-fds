@@ -5,19 +5,25 @@ var reactComponent = `
 var Component = React.createClass({
   render() {
     var items = this.props.collection.map((model) => {
-      var itemClass (model.get('isFlaged'))
-        ? 'important'
+      var itClass (model.get('isActive'))
+        ? 'selected'
         : '';
-
       return (
-        <li className={itemClass}>
+        <li className={itClass}>
           {model.get('name')}
         </li>
       );
     });
-
-    return <ul>{items}</ul>;
-  }
+    return (
+      <div>
+        <ul>{items}</ul>
+        <button onClick={this.addItem}>
+          Add
+        </button>
+      </div>
+    );
+  },
+  addItem() { /* ... */ }
 });
 `;
 

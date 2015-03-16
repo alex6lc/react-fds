@@ -5,33 +5,36 @@ var CodeEditor = require('../components/CodeEditor');
 var view = `
 var View = Backbone.View.extend({
   template: Template,
-
+  events: { ".js-add": "addItem" },
   render() {
     var data = this.collection.map((model) => {
-      var itemClass (model.get('isFlaged'))
-        ? 'important'
+      var itClass = (model.get('isActive'))
+        ? 'selected'
         : '';
-
       return {
         item: model.get('name'),
-        itemClass: itemClass
+        itClass: itClass
       };
     });
-
     var html = this.template(data);
     this.$el.html(html);
-  }
+  },
+  addItem() { /* ... */ }
 });
 `;
 
 var template = `
 <ul>
 {{#each}}
-  <li class={{itemClass}}>
+  <li class="{{itClass}}">
     {{item}}
   </li>
 {{/each}}
 </ul>
+
+<button class="js-add">
+  Add
+</button>
 `;
 
 module.exports = React.createClass({
