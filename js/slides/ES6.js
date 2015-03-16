@@ -21,22 +21,18 @@ function Person() {
 }`;
 
 var es5method = `
-function Person() {
-  var that = this;
-  that.age = 0;
-
-  setInterval(function() {
-    that.age++;
-  }, 1000);
-}`;
+var Person = Model.extend({
+  run: function (distance) {
+    //...
+  }
+});
+`;
 var es6method = `
-function Person() {
-  this.age = 0;
-
-  setInterval(() => {
-    this.age++;
-  }, 1000);
-}`;
+var Person = Model.extend({
+  run(distance) {
+    //...
+  }
+});`;
 
 module.exports = React.createClass({
     render() {
