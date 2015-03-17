@@ -1,6 +1,9 @@
 var React = require('react');
 
 var BlocModules = require('../components/Isomorphic/BlocModules');
+var Arrow = require('../components/Isomorphic/Arrow');
+
+var { isomorphic } = require('../styles');
 
 module.exports = React.createClass({
     render() {
@@ -14,15 +17,11 @@ module.exports = React.createClass({
             />
 
             <div className="row">
-                <div className="col-xs-offset-4 col-xs-1">
-                    <svg width="100%" height="20" viewBox="0 0 20 20">
-                        <g>
-                            <line id="svg_1" y2="20" x2="10" y1="0" x1="10" stroke-width="2" stroke="#000"/>
-                            <line id="svg_2" y2="10" x2="15" y1="0" x1="10" stroke-width="2" stroke="#000"/>
-                            <line id="svg_3" y2="10" x2="5" y1="0" x1="10" stroke-width="2" stroke="#000"/>
-                        </g>
-                    </svg>
+                <div className="col-xs-4"></div>
+                <div className="col-xs-1">
+                    <Arrow height={40} />
                 </div>
+                <div className="col-xs-7"></div>
             </div>
 
             <BlocModules
@@ -32,15 +31,11 @@ module.exports = React.createClass({
             />
 
             <div className="row">
-                <div className="col-xs-offset-4 col-xs-1">
-                    <svg width="100%" height="20" viewBox="0 0 20 20">
-                        <g>
-                            <line id="svg_1" y2="20" x2="10" y1="0" x1="10" stroke-width="2" stroke="#000"/>
-                            <line id="svg_2" y2="10" x2="15" y1="0" x1="10" stroke-width="2" stroke="#000"/>
-                            <line id="svg_3" y2="10" x2="5" y1="0" x1="10" stroke-width="2" stroke="#000"/>
-                        </g>
-                    </svg>
+                <div className="col-xs-4"></div>
+                <div className="col-xs-1">
+                    <Arrow height={40} />
                 </div>
+                <div className="col-xs-7"></div>
             </div>
 
             <BlocModules

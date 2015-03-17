@@ -11,7 +11,8 @@ module.exports = React.createClass({
         paddingLeft:  React.PropTypes.number,
         paddingTop:  React.PropTypes.number,
 
-        styles:  React.PropTypes.object
+        styles:  React.PropTypes.object,
+        isDash: React.PropTypes.bool
     },
     render() {
         var ratio = this.props.ratio || 1;
@@ -23,8 +24,11 @@ module.exports = React.createClass({
         var y1 = this.props.y1 * ratio + paddingTop;
         var y2 = this.props.y2 * ratio + paddingTop;
 
+        var strokeDashArray = this.props.isDash ? this.props.styles.lineStrokeDashArray : '';
+
         return <line x1={x1} y1={y1} x2={x2} y2={y2}
             strokeWidth={this.props.styles.lineStrokeWidth}
-            stroke={this.props.styles.lineStrokeColor} />;
+            stroke={this.props.styles.lineStrokeColor}
+            strokeDasharray={strokeDashArray} />;
     }
 });
