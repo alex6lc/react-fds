@@ -22,7 +22,7 @@ function Person() {
 
 var es5method = `
 var Person = Model.extend({
-  run: function (distance) {
+  run: function(distance) {
     //...
   }
 });
@@ -41,38 +41,40 @@ module.exports = React.createClass({
                 <h2>EcmaScript 6</h2>
 
                 <div className="row">
-                    <div className="col-xs-2">
-                    </div>
-                    <div className="col-xs-5">
+                    <div className="col-xs-3"></div>
+                    <div className="col-xs-4">
                         <p>ECMAScript 3/5</p>
                     </div>
-                    <div className="col-xs-5">
+                    <div className="col-xs-4">
                         <p>ECMAScript 6</p>
                     </div>
+                    <div className="col-xs-1"></div>
                 </div>
 
                 <div className="row middle-xs">
-                    <div className="col-xs-2">
+                    <div className="col-xs-3">
                         Arrow functions
                     </div>
-                    <div className="col-xs-5">
+                    <div className="col-xs-4">
                         <CodeEditor language="javascript" codeText={es5arrow} />
                     </div>
-                    <div className="col-xs-5">
+                    <div className="col-xs-4">
                         <CodeEditor language="javascript" codeText={es6arrow} />
                     </div>
+                    <div className="col-xs-1"></div>
                 </div>
 
                 <div className="row middle-xs">
-                    <div className="col-xs-2">
+                    <div className="col-xs-3">
                         Method Definitions
                     </div>
-                    <div className="col-xs-5">
+                    <div className="col-xs-4">
                         <CodeEditor language="javascript" codeText={es5method} />
                     </div>
-                    <div className="col-xs-5">
+                    <div className="col-xs-4">
                         <CodeEditor language="javascript" codeText={es6method} />
                     </div>
+                    <div className="col-xs-1"></div>
                 </div>
             </section>
         );
