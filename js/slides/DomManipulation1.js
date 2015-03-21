@@ -14,19 +14,19 @@ module.exports = React.createClass({
                     </div>
                 </div>
 
-                <div className="row">
+                <div className="row top-xs">
                     <div className="col-xs-5">
-                        <ul>
-                            <li>Red</li>
-                        </ul>
+                        <table><tbody>
+                            <tr><td>Red</td></tr>
+                        </tbody></table>
                     </div>
                     <div className="col-xs-2"></div>
                     <div className="col-xs-5">
-                        <ul>
-                            <li>Red</li>
-                            <li>Green</li>
-                            <li>Blue</li>
-                        </ul>
+                        <table><tbody>
+                            <tr><td>Red</td></tr>
+                            <tr><td>Green</td></tr>
+                            <tr><td>Blue</td></tr>
+                        </tbody></table>
                     </div>
                 </div>
             </section>
