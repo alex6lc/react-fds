@@ -26,7 +26,8 @@ module.exports = function (grunt) {
                     'dist/css/theme/sky.css': 'css/theme/source/sky.scss',
                     'dist/css/theme/moon.css': 'css/theme/source/moon.scss',
                     'dist/css/theme/solarized.css': 'css/theme/source/solarized.scss',
-                    'dist/css/theme/blood.css': 'css/theme/source/blood.scss'
+                    'dist/css/theme/blood.css': 'css/theme/source/blood.scss',
+                    'dist/css/theme/innobec.css': 'css/theme/source/innobec.scss'
                 }
             }
         },
