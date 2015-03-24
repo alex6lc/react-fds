@@ -38,69 +38,69 @@ module.exports = React.createClass({
                 <div className="row middle-xs">
                     <div className="col-xs-4">
                         <svg width="200" height="400">
-                            { Line(5, 1, 3, 3) }
-                            { Line(5, 1, 7, 3) }
+                            { Line(5, 1, 3, 4) }
+                            { Line(5, 1, 7, 4) }
 
-                            { Line(3, 3, 1, 5) }
-                            { Line(3, 3, 5, 5) }
+                            { Line(3, 4, 1, 7) }
+                            { Line(3, 4, 5, 7) }
 
-                            { Line(1, 5, 3, 7) }
+                            { Line(1, 7, 3, 10) }
 
                             { Circle(5, 1) }
 
-                            { Circle(3, 3) }
-                            { Circle(7, 3) }
+                            { Circle(3, 4) }
+                            { Circle(7, 4) }
 
-                            { Circle(1, 5) }
-                            { Circle(5, 5) }
+                            { Circle(1, 7) }
+                            { Circle(5, 7) }
 
-                            { Circle(3, 7) }
+                            { Circle(3, 10) }
                         </svg>
                     </div>
                     <div className="col-xs-4">
                         <svg width="200" height="400">
-                            { Line(5, 1, 3, 3) }
-                            { Line(5, 1, 7, 3) }
+                            { Line(5, 1, 3, 4) }
+                            { Line(5, 1, 7, 4) }
 
-                            { Line(3, 3, 1, 5) }
-                            { Line(3, 3, 5, 5) }
+                            { Line(3, 4, 1, 7) }
+                            { Line(3, 4, 5, 7) }
 
-                            { Line(1, 5, 3, 7) }
-                            { Line(5, 5, 7, 7) }
+                            { Line(1, 7, 3, 10) }
+                            { Line(5, 7, 7, 10) }
 
 
                             { Circle(5, 1) }
 
-                            { Circle(3, 3) }
-                            { Circle(7, 3, 'Remove') }
+                            { Circle(3, 4) }
+                            { Circle(7, 4, 'Remove') }
 
-                            { Circle(1, 5) }
-                            { Circle(5, 5) }
+                            { Circle(1, 7) }
+                            { Circle(5, 7) }
 
-                            { Circle(3, 7) }
-                            { Circle(7, 7, 'Add') }
+                            { Circle(3, 10) }
+                            { Circle(7, 10, 'Add') }
                         </svg>
                     </div>
                     <div className="col-xs-4">
                         <svg width="200" height="400">
-                            { Line(5, 1, 3, 3) }
+                            { Line(5, 1, 3, 4) }
 
-                            { Line(3, 3, 1, 5) }
-                            { Line(3, 3, 5, 5) }
+                            { Line(3, 4, 1, 7) }
+                            { Line(3, 4, 5, 7) }
 
-                            { Line(1, 5, 3, 7) }
-                            { Line(5, 5, 7, 7) }
+                            { Line(1, 7, 3, 10) }
+                            { Line(5, 7, 7, 10) }
 
 
                             { Circle(5, 1) }
 
-                            { Circle(3, 3) }
+                            { Circle(3, 4) }
 
-                            { Circle(1, 5) }
-                            { Circle(5, 5) }
+                            { Circle(1, 7) }
+                            { Circle(5, 7) }
 
-                            { Circle(3, 7) }
-                            { Circle(7, 7) }
+                            { Circle(3, 10) }
+                            { Circle(7, 10) }
                         </svg>
                     </div>
                 </div>

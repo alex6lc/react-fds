@@ -8,6 +8,16 @@ var Intro = require('../slides/Intro');
 var ES6 = require('../slides/ES6');
 var WhatIsReact = require('../slides/WhatIsReact');
 
+// Declarative vs Imperative
+var Alert = require('../slides/Alert');
+var Alert2 = require('../slides/Alert2');
+var Imperative = require('../slides/Imperative');
+var ImperativeUI = require('../slides/ImperativeUI');
+var DeclarativeUI = require('../slides/DeclarativeUI');
+var DeclarativeReact = require('../slides/DeclarativeReact');
+
+
+
 var DemoSearchInList = require('../slides/DemoSearchInList');
 var AnatomyReact = require('../slides/AnatomyReact');
 var AnatomyReact2 = require('../slides/AnatomyReact2');
@@ -63,6 +73,14 @@ module.exports = React.createClass({
                 <Intro />
                 <ES6 />
                 <WhatIsReact />
+
+                <Alert />
+                <Alert2 />
+                <Imperative />
+                <ImperativeUI />
+                <DeclarativeUI />
+                <DeclarativeReact />
+
                 <DemoSearchInList />
                 <AnatomyReact />
                 <AnatomyReact2 />

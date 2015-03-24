@@ -10,6 +10,7 @@ module.exports = React.createClass({
                 <p className="fragment">Only cares about the UI</p>
                 <p className="fragment">The "V" in MVC</p>
                 <p className="fragment">Relatively small (121kb minified)</p>
+                <p className="fragment">Declarative vs <del>Imperative</del></p>
             </section>
         );
     }
