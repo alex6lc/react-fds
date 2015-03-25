@@ -4,7 +4,7 @@ var CodeEditor = require('../components/CodeEditor');
 var code = `
 var React = require('react');
 
-var AlertNotification = React.createClass({
+module.exports = React.createClass({
   render() {
     var count = this.props.alerts.length;
     if ( count === 0 ) {

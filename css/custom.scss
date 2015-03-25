@@ -20,7 +20,7 @@
           height: $lineHeight * ($c - $i  + 1);
           top: $initTop + ($lineHeight * $i);
           left: (100 - $preWidth) / 2;
-          background: rgba(63,63,63,0.8);
+          background: rgba(255,255,255,0.85);
         }
       }
     }

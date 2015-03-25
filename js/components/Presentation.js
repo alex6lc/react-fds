@@ -9,19 +9,14 @@ var ES6 = require('../slides/ES6');
 var WhatIsReact = require('../slides/WhatIsReact');
 
 // Declarative vs Imperative
+var ImperativeVsDeclarative = require('../slides/ImperativeVsDeclarative');
 var Alert = require('../slides/Alert');
-var Alert2 = require('../slides/Alert2');
-var Imperative = require('../slides/Imperative');
 var ImperativeUI = require('../slides/ImperativeUI');
 var DeclarativeUI = require('../slides/DeclarativeUI');
 var DeclarativeReact = require('../slides/DeclarativeReact');
-
-
+var AnatomyReact = require('../slides/AnatomyReact');
 
 var DemoSearchInList = require('../slides/DemoSearchInList');
-var AnatomyReact = require('../slides/AnatomyReact');
-var AnatomyReact2 = require('../slides/AnatomyReact2');
-
 
 var ComponentsNotTemplates = require('../slides/ComponentsNotTemplates');
 var SeparationOfConcerns = require('../slides/SeparationOfConcerns');
@@ -76,16 +71,14 @@ module.exports = React.createClass({
                 <ES6 />
                 <WhatIsReact />
 
+                <ImperativeVsDeclarative />
                 <Alert />
-                <Alert2 />
-                <Imperative />
                 <ImperativeUI />
                 <DeclarativeUI />
                 <DeclarativeReact />
+                <AnatomyReact />
 
                 <DemoSearchInList />
-                <AnatomyReact />
-                <AnatomyReact2 />
 
                 <ComponentsNotTemplates />
                 <SeparationOfConcerns />

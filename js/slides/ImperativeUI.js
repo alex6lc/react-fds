@@ -29,7 +29,27 @@ module.exports = React.createClass({
     render() {
         return (
             <section>
-                <CodeEditor language="javascript" codeText={VIEW} />
+                <h2>Imperative</h2>
+                <div className="rel">
+                    <CodeEditor language="javascript" codeText={VIEW} />
+                    <span className="fragment current-visible hide-line-2-to-25"></span>
+                    <span className="fragment current-visible">
+                        <span className="hide-line-1-to-1"></span>
+                        <span className="hide-line-7-to-25"></span>
+                    </span>
+                    <span className="fragment current-visible">
+                        <span className="hide-line-1-to-6"></span>
+                        <span className="hide-line-12-to-25"></span>
+                    </span>
+                    <span className="fragment current-visible">
+                        <span className="hide-line-1-to-11"></span>
+                        <span className="hide-line-18-to-25"></span>
+                    </span>
+                    <span className="fragment current-visible">
+                        <span className="hide-line-1-to-17"></span>
+                    </span>
+                    <div className="fragment"></div>
+                </div>
             </section>
         );
     }

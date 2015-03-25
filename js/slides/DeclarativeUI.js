@@ -24,7 +24,21 @@ module.exports = React.createClass({
     render() {
         return (
             <section>
-                <CodeEditor language="javascript" codeText={VIEW} />
+                <h2>Declarative</h2>
+                <div className="rel">
+                    <CodeEditor language="javascript" codeText={VIEW} />
+                    <span className="fragment current-visible">
+                        <span className="hide-line-4-to-25"></span>
+                    </span>
+                    <span className="fragment current-visible">
+                        <span className="hide-line-1-to-3"></span>
+                        <span className="hide-line-10-to-25"></span>
+                    </span>
+                    <span className="fragment current-visible">
+                        <span className="hide-line-1-to-9"></span>
+                    </span>
+                    <div className="fragment"></div>
+                </div>
             </section>
         );
     }

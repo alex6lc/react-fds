@@ -2,7 +2,7 @@ var React = require('react');
 var CodeEditor = require('../components/CodeEditor');
 
 var reactComponent = `
-var Component = React.createClass({
+module.exports = React.createClass({
   render() {
     var items = this.props.collection.map((model) => {
       var itClass (model.get('isActive'))
