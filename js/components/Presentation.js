@@ -33,6 +33,7 @@ var VirtualDom = require('../slides/VirtualDom');
 var DomManipulation1 = require('../slides/DomManipulation1');
 var DomManipulation2 = require('../slides/DomManipulation2');
 var VirtualDomDiff = require('../slides/VirtualDomDiff');
+var SyntheticEvents = require('../slides/SyntheticEvents');
 var DemoDomDiff = require('../slides/DemoDomDiff');
 
 // Props and State
@@ -45,6 +46,7 @@ var FatServerThinClient = require('../slides/FatServerThinClient');
 var FatClientThinServer = require('../slides/FatClientThinServer');
 var SinglePageApplication = require('../slides/SinglePageApplication');
 var SharedClientServer = require('../slides/SharedClientServer');
+var IsomorphicDemo = require('../slides/IsomorphicDemo');
 
 /*
 
@@ -94,6 +96,7 @@ module.exports = React.createClass({
                 <DomManipulation1 />
                 <DomManipulation2 />
                 <VirtualDomDiff />
+                <SyntheticEvents />
                 <DemoDomDiff />
 
                 <PropsAndState />
@@ -104,6 +107,7 @@ module.exports = React.createClass({
                 <FatClientThinServer />
                 <SinglePageApplication />
                 <SharedClientServer />
+                <IsomorphicDemo />
             </div>
         );
     }
