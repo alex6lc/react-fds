@@ -8,6 +8,8 @@ var Intro = require('../slides/Intro');
 var ES6 = require('../slides/ES6');
 var WhatIsReact = require('../slides/WhatIsReact');
 
+var EverythingComponent = require('../slides/EverythingComponent');
+
 // Declarative vs Imperative
 var ImperativeVsDeclarative = require('../slides/ImperativeVsDeclarative');
 var Alert = require('../slides/Alert');
@@ -73,6 +75,8 @@ module.exports = React.createClass({
                 <Intro />
                 <ES6 />
                 <WhatIsReact />
+
+                <EverythingComponent />
 
                 <ImperativeVsDeclarative />
                 <Alert />

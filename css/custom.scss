@@ -85,4 +85,18 @@
     padding: 5px;
   }
 
+  img.chat {
+    display: block;
+    margin: 0;
+    border: 0;
+    max-width: 100%;
+    max-height: 100%;
+  }
+
+  .chat-component {
+    position: absolute;
+    color: white;
+    font-size: 40%;
+    text-align: left;
+  }
 }
