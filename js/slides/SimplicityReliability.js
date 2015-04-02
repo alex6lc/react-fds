@@ -4,7 +4,8 @@ module.exports = React.createClass({
     render() {
         return (
             <section>
-                <h2>JSX</h2>
+                <h3>&#8593; Simplicity</h3>
+                <h3>&#8593; Reliability</h3>
             </section>
         );
     }

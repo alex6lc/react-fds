@@ -12,8 +12,11 @@ var WhatIsReact = require('../slides/WhatIsReact');
 var ImperativeVsDeclarative = require('../slides/ImperativeVsDeclarative');
 var Alert = require('../slides/Alert');
 var ImperativeUI = require('../slides/ImperativeUI');
+var ComplexityErrors = require('../slides/ComplexityErrors');
+var SimplicityReliability = require('../slides/SimplicityReliability');
 var DeclarativeUI = require('../slides/DeclarativeUI');
 var DeclarativeReact = require('../slides/DeclarativeReact');
+var JSX = require('../slides/JSX');
 var AnatomyReact = require('../slides/AnatomyReact');
 
 var DemoSearchInList = require('../slides/DemoSearchInList');
@@ -74,8 +77,11 @@ module.exports = React.createClass({
                 <ImperativeVsDeclarative />
                 <Alert />
                 <ImperativeUI />
+                <ComplexityErrors />
+                <SimplicityReliability />
                 <DeclarativeUI />
                 <DeclarativeReact />
+                <JSX />
                 <AnatomyReact />
 
                 <DemoSearchInList />
