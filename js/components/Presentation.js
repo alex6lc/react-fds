@@ -48,6 +48,8 @@ var SinglePageApplication = require('../slides/SinglePageApplication');
 var SharedClientServer = require('../slides/SharedClientServer');
 var IsomorphicDemo = require('../slides/IsomorphicDemo');
 
+var FurtherReading = require('../slides/FurtherReading');
+
 /*
 
  */
@@ -111,6 +113,8 @@ module.exports = React.createClass({
                 <SinglePageApplication />
                 <SharedClientServer />
                 <IsomorphicDemo />
+
+                <FurtherReading />
             </div>
         );
     }
