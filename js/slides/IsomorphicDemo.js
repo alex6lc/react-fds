@@ -4,7 +4,7 @@ module.exports = React.createClass({
     render() {
         return (
             <section>
-                <h2>Isomorphic - Demo</h2>
+                <h3>Isomorphic - Demo</h3>
                 <a href="http://react-router-mega-demo.herokuapp.com/" target="_BLANK"><small>By Ryan Florence</small></a>
             </section>
         );

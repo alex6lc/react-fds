@@ -41,7 +41,7 @@ module.exports = React.createClass({
     render() {
         return (
             <section>
-                <h2>Templates and Views</h2>
+                <h3>Templates and Views</h3>
 
                 <div className="row">
                     <div className="col-xs-4">

@@ -24,7 +24,7 @@ module.exports = React.createClass({
     render() {
         return (
             <section>
-                <h2>Declarative</h2>
+                <h3>Declarative</h3>
                 <div className="rel">
                     <CodeEditor language="javascript" codeText={VIEW} />
                     <span className="fragment current-visible">

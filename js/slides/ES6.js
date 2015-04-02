@@ -38,7 +38,7 @@ module.exports = React.createClass({
     render() {
         return (
             <section>
-                <h2>EcmaScript 6</h2>
+                <h3>EcmaScript 6</h3>
 
                 <div className="row">
                     <div className="col-xs-3"></div>

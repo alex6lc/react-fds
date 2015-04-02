@@ -31,7 +31,7 @@ module.exports = React.createClass({
     render() {
         return (
             <section>
-                <h2>React Component</h2>
+                <h3>React Component</h3>
                 <CodeEditor language="javascript" codeText={reactComponent} />
             </section>
         );

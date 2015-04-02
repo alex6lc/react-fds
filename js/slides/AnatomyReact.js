@@ -30,7 +30,7 @@ module.exports = React.createClass({
     render() {
         return (
             <section>
-                <h2>Anatomy of a React Component</h2>
+                <h3>Anatomy of a React Component</h3>
                 <div className="rel">
                     <CodeEditor language="javascript" codeText={code} />
                     <span className="fragment current-visible hide-line-2-to-25"></span>

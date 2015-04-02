@@ -39,7 +39,7 @@ module.exports = React.createClass({
 
         return (
             <section>
-                <h2>Unidirectional Flow</h2>
+                <h3>Unidirectional Flow</h3>
 
                 <svg width={8 * ratio + paddingLeft} height="400">
                     <Line x1={5 * ratio} y1={0} x2={5 * ratio} y2={ratio + paddingTop} styles={styles} />

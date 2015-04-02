@@ -4,7 +4,7 @@ module.exports = React.createClass({
     render() {
         return (
             <section>
-                <h2>What is <em>React</em>{"?"}</h2>
+                <h3>What is <em>React</em>{"?"}</h3>
 
                 <p className="fragment">Library, not a <del>framework</del></p>
                 <p className="fragment">Only cares about the UI</p>

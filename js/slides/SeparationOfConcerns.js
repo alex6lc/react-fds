@@ -4,8 +4,7 @@ module.exports = React.createClass({
     render() {
         return (
             <section>
-                <h2>Seperation of</h2>
-                <h2>Concerns</h2>
+                <h3>Seperation of Concerns</h3>
 
                 <p className="fragment">Reduce Coupling</p>
                 <p className="fragment">Increase Cohesion</p>

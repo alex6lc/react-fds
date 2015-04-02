@@ -4,7 +4,7 @@ module.exports = React.createClass({
     render() {
         return (
             <section>
-                <h2>Alert Notification</h2>
+                <h3>Alert Notification</h3>
                 <img src="images/0alert.png" />
                 <img src="images/12alert.png" />
                 <img src="images/99alert.png" />

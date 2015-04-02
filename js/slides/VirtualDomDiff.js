@@ -33,7 +33,7 @@ module.exports = React.createClass({
 
         return (
             <section>
-                <h2>Virtual DOM - Diff</h2>
+                <h3>Virtual DOM - Diff</h3>
                 <div className="row middle-xs">
                     <div className="col-xs-4">
                         <svg width="200" height="400">

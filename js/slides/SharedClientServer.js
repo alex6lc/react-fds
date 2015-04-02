@@ -8,7 +8,7 @@ var { isomorphic } = require('../styles');
 module.exports = React.createClass({
     render() {
         return (<section>
-            <h2>Shared, Server, Client</h2>
+            <h3>Shared, Server, Client</h3>
 
             <BlocModules
                 items={['DOM Manipulation']}

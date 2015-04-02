@@ -6,7 +6,7 @@ var Separator = require('../components/Isomorphic/Separator');
 module.exports = React.createClass({
     render() {
         return (<section>
-            <h2>Fat Client, Thin Server</h2>
+            <h3>Fat Client, Thin Server</h3>
 
             <BlocModules
                 items={['DOM Manipulation','Routing','View Layer','Application Logic']}

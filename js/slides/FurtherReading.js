@@ -4,7 +4,7 @@ module.exports = React.createClass({
     render() {
         return (
             <section>
-                <h2>Further Reading...</h2>
+                <h3>Further Reading...</h3>
 
                 <p className="fragment">React Native</p>
                 <p className="fragment">Om - A ClojureScript library over Facebook's React</p>

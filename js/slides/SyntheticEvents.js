@@ -21,7 +21,7 @@ module.exports = React.createClass({
     render() {
         return (
             <section>
-                <h2>Synthetic Events</h2>
+                <h3>Synthetic Events</h3>
 
                 <p>Event Delegation</p>
                 <div className="row middle-xs">

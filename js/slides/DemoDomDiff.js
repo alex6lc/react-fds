@@ -31,7 +31,7 @@ module.exports = React.createClass({
     render() {
         return (
             <section>
-                <h2>Demo - Virtual DOM</h2>
+                <h3>Demo - Virtual DOM</h3>
 
                 <Playground codeText={demo} />
             </section>

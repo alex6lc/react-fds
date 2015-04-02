@@ -4,7 +4,7 @@ module.exports = React.createClass({
     render() {
         return (
             <section>
-                <h2>Single Page Application</h2>
+                <h3>SPA issues{"?"}</h3>
 
                 <p className="fragment">SEO</p>
                 <p className="fragment">Performance</p>
