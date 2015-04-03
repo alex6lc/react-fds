@@ -1,3 +1,5 @@
+@import "theme/source/innobec";
+
 #react {
   $lineHeight: 24px;
   $initTop: 2.5px;
@@ -46,6 +48,29 @@
     opacity: 1;
   }
 
+  button {
+    display: inline-block;
+    padding: 6px 12px;
+    margin-bottom: 0;
+    font-size: 80%;
+    font-weight: 400;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    cursor: pointer;
+    user-select: none;
+    outline: none;
+    background-color: $backgroundColor;
+    border: 1px solid $mainColor;
+  }
+
+  .playground-action {
+    margin-top: 20px;
+    padding-top: 20px;
+    border-top: 3px solid $mainColor;
+    font-size: 50%;
+  }
+
   .playground-preview {
     margin: 20px auto 0 auto;
     font-size: 80%;
@@ -58,17 +83,6 @@
 
     button {
       color: #fff;
-      display: inline-block;
-      padding: 6px 12px;
-      margin-bottom: 0;
-      font-size: 80%;
-      font-weight: 400;
-      text-align: center;
-      white-space: nowrap;
-      vertical-align: middle;
-      cursor: pointer;
-      user-select: none;
-      outline: none;
       background-color: #337ab7;
       border: 1px solid #2e6da4;
     }

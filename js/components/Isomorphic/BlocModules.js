@@ -7,12 +7,12 @@ module.exports = React.createClass({
         items: React.PropTypes.array
     },
     render() {
-        var items = this.props.items.map((item) => {
-            return <div className="row"><div className="item col-xs">{item}</div></div>;
+        var items = this.props.items.map((item, i) => {
+            return <div className="row" key={i}><div className="item col-xs">{item}</div></div>;
         });
 
-        var languages = this.props.languages.map((language) => {
-            return <small>{language}</small>;
+        var languages = this.props.languages.map((language, i) => {
+            return <small key={i}>{language}</small>;
         });
         return (
             <div className="row">

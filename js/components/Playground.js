@@ -62,6 +62,9 @@ var Playground = React.createClass({
                 <div className="col-xs-2">
                     <div ref="mount" className="playground-preview"></div>
                     {Error}
+                    <div className="playground-action">
+                        <button onClick={this.reset}>Reset</button>
+                    </div>
                 </div>
             </div>
         );
@@ -71,7 +74,11 @@ var Playground = React.createClass({
         return [this.refs.mount.getDOMNode()];
     },
 
-    executeCode() {
+    reset() {
+        this.executeCode(true);
+    },
+
+    executeCode(reset) {
         var mountNode = this.refs.mount.getDOMNode();
 
         try {
@@ -82,7 +89,9 @@ var Playground = React.createClass({
             eval(compiledCode);
             eval([
                 'if (module.exports) {',
-                '  module.exports = makeHot(module.exports, "module.exports");',
+                (reset === true)
+                    ? ''
+                    : '  module.exports = makeHot(module.exports, "module.exports");',
                 '  React.render(React.createElement(module.exports), mountNode);',
                 '}'
             ].join('\n'));

@@ -7,7 +7,7 @@ module.exports = React.createClass({
         return { elapsed: 0, start: new Date() };
     },
     componentDidMount() {
-        this.timer = setInterval(this.tick, 50);
+        this.timer = setInterval(this.tick, 100);
     },
     componentWillUnmount() {
         clearInterval(this.timer);
