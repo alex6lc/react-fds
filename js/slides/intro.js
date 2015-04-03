@@ -3,7 +3,7 @@ var React = require('react');
 module.exports = React.createClass({
     render() {
         return (
-            <section>
+            <section data-background="#272322">
                 <img className="logo" src="images/react_logo.png" />
                 <h1>React</h1>
 

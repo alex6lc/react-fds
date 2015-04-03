@@ -14,15 +14,15 @@ if ( count > 99 ) {
   }
 }
 if (count === 0) {
-  if ( this.hasBadge() ) {
-    this.removeBadge();
+  if ( this.hasLabel() ) {
+    this.removeLabel();
   }
   return;
 }
-if ( !this.hasBadge() ) {
-  this.addBadge();
+if ( !this.hasLabel() ) {
+  this.addLabel();
 }
-this.getBadge().setText(count);
+this.getLabel().setText(count);
 `;
 
 module.exports = React.createClass({

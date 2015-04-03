@@ -19,7 +19,9 @@ var SimplicityReliability = require('../slides/SimplicityReliability');
 var DeclarativeUI = require('../slides/DeclarativeUI');
 var DeclarativeReact = require('../slides/DeclarativeReact');
 var JSX = require('../slides/JSX');
+var JSXCompare = require('../slides/JSXCompare');
 var AnatomyReact = require('../slides/AnatomyReact');
+var Functional = require('../slides/Functional');
 
 var DemoSearchInList = require('../slides/DemoSearchInList');
 
@@ -88,7 +90,9 @@ module.exports = React.createClass({
                 <DeclarativeUI />
                 <DeclarativeReact />
                 <JSX />
+                <JSXCompare />
                 <AnatomyReact />
+                <Functional />
 
                 <DemoSearchInList />
 
