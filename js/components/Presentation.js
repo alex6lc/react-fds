@@ -42,6 +42,11 @@ var DemoDomDiff = require('../slides/DemoDomDiff');
 var PropsAndState = require('../slides/PropsAndState');
 var UnidirectionalFlow = require('../slides/UnidirectionalFlow');
 
+// Life Cycle
+var LifeCycle = require('../slides/LifeCycle');
+var LifeCycleList = require('../slides/LifeCycleList');
+var LifeCycleDemo = require('../slides/LifeCycleDemo');
+
 // Isomorphic
 var Isomorphic = require('../slides/Isomorphic');
 var FatServerThinClient = require('../slides/FatServerThinClient');
@@ -51,11 +56,6 @@ var SharedClientServer = require('../slides/SharedClientServer');
 var IsomorphicDemo = require('../slides/IsomorphicDemo');
 
 var FurtherReading = require('../slides/FurtherReading');
-
-/*
-
- */
-
 
 module.exports = React.createClass({
     componentDidMount() {
@@ -110,6 +110,10 @@ module.exports = React.createClass({
 
                 <PropsAndState />
                 <UnidirectionalFlow />
+
+                <LifeCycle />
+                <LifeCycleList />
+                <LifeCycleDemo />
 
                 <Isomorphic />
                 <FatServerThinClient />
