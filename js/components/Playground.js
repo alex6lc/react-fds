@@ -3,8 +3,6 @@ var CodeEditor = require('../components/CodeEditor');
 var selfCleaningTimeout = require('../mixins/selfCleaningTimeout');
 
 var Playground = React.createClass({
-    displayName: 'Playground',
-
     mixins: [selfCleaningTimeout],
 
     propTypes: {
