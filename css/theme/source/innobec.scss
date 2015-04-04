@@ -15,6 +15,8 @@ $backgroundColor: #fff;
 $mainColor: #272322;
 $headingColor: #e0303b;
 
+$progressColor: #e0303b;
+
 $mainFontSize: 38px;
 $mainFont: 'Roboto Slab', Helvetica, sans-serif;
 $headingFont: 'Montserrat', Helvetica, sans-serif;
@@ -22,7 +24,7 @@ $headingTextShadow: none;
 $headingLetterSpacing: normal;
 $headingTextTransform: uppercase;
 $headingFontWeight: 700;
-$linkColor: #2a76dd;
+$linkColor: #272322;
 $linkColorHover: lighten( $linkColor, 15% );
 $selectionBackgroundColor: lighten( $linkColor, 25% );
 
@@ -30,7 +32,6 @@ $heading1Size: 2.5em;
 $heading2Size: 1.6em;
 $heading3Size: 1.3em;
 $heading4Size: 1.0em;
-
 
 $codeBackgroundColor: #fff;
 $codeColor: black;

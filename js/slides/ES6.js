@@ -76,6 +76,16 @@ module.exports = React.createClass({
                     </div>
                     <div className="col-xs-1"></div>
                 </div>
+
+                <aside className="notes">
+                    Feature Freeze: aout 2014
+                    <br />
+                    Fini d'étre intégré en juin 2015
+                    <br />
+                    Binder au code entourant
+                    <br />
+                    Syntaxe plus épuré
+                </aside>
             </section>
         );
     }

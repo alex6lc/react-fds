@@ -6,7 +6,7 @@ var js = `
 var Foo = React.createClass({ /* */ });
 var HelloMessage = React.createClass({
   displayName: "HelloMessage",
-  render: function() {
+  render() {
     return
       React.createElement("div", null,
         React.createElement(Foo, null, null),
@@ -20,7 +20,7 @@ var HelloMessage = React.createClass({
 var jsx = `
 var Foo = React.createClass({ /* */ });
 var HelloMessage = React.createClass({
-  render: function() {
+  render() {
     return (
       <div>
         <Foo />

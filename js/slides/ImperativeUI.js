@@ -4,7 +4,7 @@ var CodeEditor = require('../components/CodeEditor');
 var VIEW = `
 var count = this.alerts.length;
 if ( count > 99 ) {
-  count = "99+";
+  count = 99;
   if ( !this.hasFire() ) {
     this.addFire();
   }

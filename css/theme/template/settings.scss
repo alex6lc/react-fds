@@ -40,6 +40,9 @@ $selectionColor: #fff;
 $codeBackgroundColor: #3F3F3F;
 $codeColor: #DCDCDC;
 
+// Progress
+$progressColor: #13DAEC;
+
 // Generates the presentation background, can be overridden
 // to return a background image or gradient
 @mixin bodyBackground() {

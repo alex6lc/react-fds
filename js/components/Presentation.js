@@ -30,6 +30,8 @@ var SeparationOfConcerns = require('../slides/SeparationOfConcerns');
 var HandlebarsAndView = require('../slides/HandlebarsAndView');
 var ReactComponent = require('../slides/ReactComponent');
 
+var Rerender = require('../slides/Rerender');
+
 // Virtual DOM
 var VirtualDom = require('../slides/VirtualDom');
 var DomManipulation1 = require('../slides/DomManipulation1');
@@ -62,7 +64,7 @@ module.exports = React.createClass({
         // Full list of configuration options available at:
         // https://github.com/hakimel/reveal.js#configuration
         Reveal.initialize({
-            controls: true,
+            controls: false,
             progress: true,
             history: true,
             center: true,
@@ -100,6 +102,8 @@ module.exports = React.createClass({
                 <SeparationOfConcerns />
                 <HandlebarsAndView />
                 <ReactComponent />
+
+                <Rerender />
 
                 <VirtualDom />
                 <DomManipulation1 />

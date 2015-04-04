@@ -14,7 +14,7 @@ if ( count === 0 ) {
 } else {
   return (
     <div class="alert-icon fire">
-      <div class="icon-message">99+</div>
+      <div class="icon-message">99</div>
     </div>
   );
 }

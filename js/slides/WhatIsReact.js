@@ -13,6 +13,16 @@ module.exports = React.createClass({
                 <p className="fragment">Relatively small (121kb minified)</p>
                 <p className="fragment">Everything is a component</p>
                 <p className="fragment">Declarative vs <del>Imperative</del></p>
+
+                <aside className="notes">
+                    Agnostic d'ou provient le data ou de l'architecture
+                    <br />
+                    React render du UI et repond a des events du browser
+                    <br />
+                    Créer par l'équipe de publicité (annonce)
+                    <br />
+                    30kb de plus que jquery
+                </aside>
             </section>
         );
     }
