@@ -35,6 +35,25 @@ module.exports = React.createClass({
                 <p>Normalizes events across browsers (IE8)</p>
                 <p>A single native event listener at root of the document</p>
             </section>
+            <aside className="notes">
+                optimise c’est l'attachement des events
+                <br/>
+                Events listeners directement sur des DOM nodes = 
+                <br/>
+                très demandant
+                <br/>
+                ça consume beaucoup de mémoire
+                <br/>
+                jQuery = fameux on avec une sélecteur
+                <br/>
+                React a re-implementé un event system complets qui suit le standard W3C
+                <br/>
+                Attache sur le root du document
+                <br/>
+                Garde un hash des event listeners et propager l'évènement a partir de celui-ci. 
+                <br/>
+                Pas besoin de parcourir sont virtual DOM
+            </aside>
         );
     }
 });
