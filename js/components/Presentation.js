@@ -60,6 +60,7 @@ var SharedClientServer = require('../slides/SharedClientServer');
 var IsomorphicDemo = require('../slides/IsomorphicDemo');
 
 var FurtherReading = require('../slides/FurtherReading');
+var End = require('../slides/End');
 
 module.exports = React.createClass({
     componentDidMount() {
@@ -131,6 +132,7 @@ module.exports = React.createClass({
                 <IsomorphicDemo />
 
                 <FurtherReading />
+                <End />
             </div>
         );
     }

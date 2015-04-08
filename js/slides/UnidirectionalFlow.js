@@ -60,6 +60,14 @@ module.exports = React.createClass({
                     { Circle(3, 10) }
                     { Circle(7, 10) }
                 </svg>
+
+                <aside className="notes">
+                    Props, propriétés, sont des parametre immutable passé d'un parent à ces enfants
+                    <br />
+                    State, c'est un sapshot a un certin temps donné.
+                    <br />
+                    Normalement à la suite d'un input d'un utilisateur
+                </aside>
             </section>
         );
     }

@@ -39,6 +39,11 @@ module.exports = React.createClass({
                     </span>
                     <div className="fragment"></div>
                 </div>
+                <aside className="notes">
+                    Beaucoup plus claire
+                    <br/>
+                    Revenir dans le code apres 1 mois, et rajouter la citrouille, c'est l'histoire de rajouter un if
+                </aside>
             </section>
         );
     }

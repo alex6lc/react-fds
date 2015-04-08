@@ -48,14 +48,6 @@ module.exports = React.createClass({
                         </tbody>
                     </table>
                 </small>
-
-                <aside className="notes">
-                    Props, propriétés, sont des parametre immutable passé d'un parent à ces enfants
-                    <br />
-                    State, c'est un sapshot a un certin temps donné.
-                    <br />
-                    Normalement à la suite d'un input d'un utilisateur
-                </aside>
             </section>
         );
     }

@@ -50,6 +50,17 @@ module.exports = React.createClass({
                     </span>
                     <div className="fragment"></div>
                 </div>
+                <aside className="notes">
+                    c'est complex comme code
+                    <br/>
+                    garder en memoire tous les paths que le code peu prendre c'est difficile
+                    <br/>
+                    30 octobre, ajouter un citrouille pour l'halloween
+                    <br/>
+                    chances d'introduire un regression sont éléve.
+                    <br/>
+                    Call Screen Controller === code imperatif
+                </aside>
             </section>
         );
     }

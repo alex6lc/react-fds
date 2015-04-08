@@ -49,7 +49,13 @@ module.exports = React.createClass({
                     <div className="fragment"></div>
                 </div>
                 <aside className="notes">
-                    This slide has fragments which are also stepped through in the notes window.
+                    ES6 Classes
+                    <br/>
+                    class HelloMessage extends React.Component
+                    <br/>
+                    Render == method pure
+                    <br/>
+                    Render =ne devrait pas modifier l'etat du component
                 </aside>
             </section>
         );
