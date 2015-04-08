@@ -4,16 +4,24 @@ module.exports = {
 
         lineStrokeDashArray: '10,10',
         lineStrokeWidth: 5,
-        lineStrokeColor: '#DCDCDC'
+        lineStrokeColor: '#272322'
     },
     virtualDomDiff: {
         lineStrokeWidth: 4,
-        lineStrokeColor: '#3F3F3F',
+        lineStrokeColor: '#272322',
 
-        CircleStrokeWidth: 2,
-        CircleStrokeColor: '#3F3F3F',
-        circleFill: '#DCDCDC',
+        circleStrokeWidth: 4,
+        circleStrokeColor: '#272322',
+        circleFill: '#fff',
         circleFillAdd: '#1485CC',
         circleFillRemove: '#CC9393'
+    },
+    unidirectional: {
+        lineStrokeWidth: 4,
+        lineStrokeColor: '#272322',
+
+        circleStrokeWidth: 4,
+        circleStrokeColor: '#272322',
+        circleFill: '#fff'
     }
 };

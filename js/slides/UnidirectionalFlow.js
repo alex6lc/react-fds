@@ -1,16 +1,10 @@
 var React = require('react');
 
 var Line = require('../components/Line');
+var Arrow = require('../components/Isomorphic/Arrow');
 
-var styles = {
-    lineStrokeWidth: 4,
-    lineStrokeColor: 'red',
-    fillColor: 'red',
+var { unidirectional } = require('../styles');
 
-    sizeRatio: 25,
-    paddingTop: 80,
-    paddingLeft: 50
-};
 
 module.exports = React.createClass({
     render() {
@@ -24,7 +18,7 @@ module.exports = React.createClass({
                 paddingLeft={paddingLeft}
                 paddingTop={paddingTop}
                 ratio={ratio}
-                styles={styles} />;
+                styles={unidirectional} />;
         };
 
         var Circle = (cx, cy) => {
@@ -32,9 +26,9 @@ module.exports = React.createClass({
             cy = cy * ratio + paddingTop;
 
             return <circle cx={cx} cy={cy} r={circleRadius}
-                stroke={styles.lineStrokeColor}
-                strokeWidth={styles.lineStrokeWidth}
-                fill={styles.fillColor} />;
+                stroke={unidirectional.circleStrokeColor}
+                strokeWidth={unidirectional.circleStrokeWidth}
+                fill={unidirectional.circleFill} />;
         };
 
         return (
@@ -42,28 +36,29 @@ module.exports = React.createClass({
                 <h3>Unidirectional Flow</h3>
 
                 <svg width={8 * ratio + paddingLeft} height="400">
-                    <Line x1={5 * ratio} y1={0} x2={5 * ratio} y2={ratio + paddingTop} styles={styles} />
-                    <Line x1={5 * ratio} y1={ratio + paddingTop} x2={ratio} y2={5 * ratio + paddingTop} styles={styles} />
-                    <Line x1={ratio} y1={5 * ratio + paddingTop} x2={ratio} y2={400} styles={styles} />
+                    <Line x1={5 * ratio} y1={0} x2={5 * ratio} y2={ratio + paddingTop} styles={unidirectional} />
+                    <Line x1={5 * ratio} y1={ratio + paddingTop} x2={ratio} y2={7 * ratio + paddingTop} styles={unidirectional} />
+                    <Line x1={ratio} y1={7 * ratio + paddingTop} x2={ratio} y2={400} styles={unidirectional} />
+                    <Line x1={ratio} y1={400} x2={ratio - 10} y2={380} styles={unidirectional} />
+                    <Line x1={ratio} y1={400} x2={ratio + 10} y2={380} styles={unidirectional} />
 
-                    { LineDiagram(5, 1, 3, 3) }
+                    { LineDiagram(5, 1, 3, 4) }
 
-                    { LineDiagram(3, 3, 1, 5) }
-                    { LineDiagram(3, 3, 5, 5) }
+                    { LineDiagram(3, 4, 1, 7) }
+                    { LineDiagram(3, 4, 5, 7) }
 
-                    { LineDiagram(1, 5, 3, 7) }
-                    { LineDiagram(5, 5, 7, 7) }
-
+                    { LineDiagram(5, 7, 3, 10) }
+                    { LineDiagram(5, 7, 7, 10) }
 
                     { Circle(5, 1) }
 
-                    { Circle(3, 3) }
+                    { Circle(3, 4) }
 
-                    { Circle(1, 5) }
-                    { Circle(5, 5) }
+                    { Circle(1, 7) }
+                    { Circle(5, 7) }
 
-                    { Circle(3, 7) }
-                    { Circle(7, 7) }
+                    { Circle(3, 10) }
+                    { Circle(7, 10) }
                 </svg>
             </section>
         );

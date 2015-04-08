@@ -26,8 +26,8 @@ module.exports = React.createClass({
             fill = virtualDomDiff['circleFill' + (fill  || '')];
 
             return <circle cx={cx} cy={cy} r={circleRadius}
-                stroke={virtualDomDiff.lineStrokeColor}
-                strokeWidth={virtualDomDiff.lineStrokeWidth}
+                stroke={virtualDomDiff.circleStrokeColor}
+                strokeWidth={virtualDomDiff.circleStrokeWidth}
                 fill={fill} />;
         };
 

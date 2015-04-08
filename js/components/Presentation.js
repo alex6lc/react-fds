@@ -43,6 +43,8 @@ var DemoDomDiff = require('../slides/DemoDomDiff');
 // Props and State
 var PropsAndState = require('../slides/PropsAndState');
 var UnidirectionalFlow = require('../slides/UnidirectionalFlow');
+var PropsAndStateTable = require('../slides/PropsAndStateTable');
+var PropsValidation = require('../slides/PropsValidation');
 
 // Life Cycle
 var LifeCycle = require('../slides/LifeCycle');
@@ -96,6 +98,11 @@ module.exports = React.createClass({
                 <AnatomyReact />
                 <Functional />
 
+                <PropsAndState />
+                <UnidirectionalFlow />
+                <PropsAndStateTable />
+                <PropsValidation />
+
                 <DemoSearchInList />
 
                 <ComponentsNotTemplates />
@@ -111,9 +118,6 @@ module.exports = React.createClass({
                 <VirtualDomDiff />
                 <SyntheticEvents />
                 <DemoDomDiff />
-
-                <PropsAndState />
-                <UnidirectionalFlow />
 
                 <LifeCycle />
                 <LifeCycleList />
