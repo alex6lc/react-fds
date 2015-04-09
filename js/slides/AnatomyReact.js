@@ -1,5 +1,6 @@
 var React = require('react');
 var CodeEditor = require('../components/CodeEditor');
+var Notes = require('../components/Notes');
 
 var code = `
 var React = require('react');
@@ -18,7 +19,7 @@ module.exports = React.createClass({
     } else {
       return (
         <div className="alert-icon fire">
-          <div className="icon-message">99+</div>
+          <div className="icon-message">99</div>
         </div>
       );
     }
@@ -48,15 +49,12 @@ module.exports = React.createClass({
                     </span>
                     <div className="fragment"></div>
                 </div>
-                <aside className="notes">
-                    ES6 Classes
-                    <br/>
-                    class HelloMessage extends React.Component
-                    <br/>
-                    Render == method pure
-                    <br/>
-                    Render =ne devrait pas modifier l'etat du component
-                </aside>
+                <Notes notes={[
+                    'ES6 Classes',
+                    'class HelloMessage extends React.Component',
+                    'Render == method pure',
+                    'Render =ne devrait pas modifier l\'etat du component'
+                ]} />
             </section>
         );
     }

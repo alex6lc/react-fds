@@ -1,5 +1,6 @@
 var React = require('react');
 var CodeEditor = require('../components/CodeEditor');
+var Notes = require('../components/Notes');
 
 var VIEW = `
 var count = this.alerts.length;
@@ -50,17 +51,13 @@ module.exports = React.createClass({
                     </span>
                     <div className="fragment"></div>
                 </div>
-                <aside className="notes">
-                    c'est complex comme code
-                    <br/>
-                    garder en memoire tous les paths que le code peu prendre c'est difficile
-                    <br/>
-                    30 octobre, ajouter un citrouille pour l'halloween
-                    <br/>
-                    chances d'introduire un regression sont éléve.
-                    <br/>
-                    Call Screen Controller === code imperatif
-                </aside>
+                <Notes notes={[
+                    'c\'est complex comme code',
+                    'garder en memoire tous les paths que le code peu prendre c\'est difficile',
+                    '30 octobre, ajouter un citrouille pour l\'halloween',
+                    'chances d\'introduire un regression sont éléve.',
+                    'Call Screen Controller === code imperatif'
+                ]} />
             </section>
         );
     }

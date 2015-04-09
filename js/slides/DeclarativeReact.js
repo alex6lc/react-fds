@@ -18,7 +18,7 @@ module.exports = React.createClass({
     } else {
       return (
         <div className="alert-icon fire">
-          <div className="icon-message">99+</div>
+          <div className="icon-message">99</div>
         </div>
       );
     }

@@ -9,7 +9,7 @@ var HelloMessage = React.createClass({
   render() {
     return
       React.createElement("div", null,
-        React.createElement(Foo, null, null),
+        React.createElement(Foo, { foo: "bar" }, null),
         "Hello ",
         this.props.name
       );
@@ -23,7 +23,7 @@ var HelloMessage = React.createClass({
   render() {
     return (
       <div>
-        <Foo />
+        <Foo foo="bar" />
         Hello {this.props.name}
       </div>
     );

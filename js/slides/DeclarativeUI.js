@@ -1,5 +1,6 @@
 var React = require('react');
 var CodeEditor = require('../components/CodeEditor');
+var Notes = require('../components/Notes');
 
 var VIEW = `
 var count = this.alerts.length;
@@ -39,11 +40,10 @@ module.exports = React.createClass({
                     </span>
                     <div className="fragment"></div>
                 </div>
-                <aside className="notes">
-                    Beaucoup plus claire
-                    <br/>
-                    Revenir dans le code apres 1 mois, et rajouter la citrouille, c'est l'histoire de rajouter un if
-                </aside>
+                <Notes notes={[
+                    'Beaucoup plus claire',
+                    'Revenir dans le code apres 1 mois, et rajouter la citrouille, c\'est l\'histoire de rajouter un if'
+                ]} />
             </section>
         );
     }

@@ -1,11 +1,11 @@
 var React = require('react');
 var CodeEditor = require('../components/CodeEditor');
-
+var Notes = require('../components/Notes');
 
 var view = `
 var View = Backbone.View.extend({
   template: Template,
-  events: { ".js-add": "addItem" },
+  events: { "click .js-add": "addItem" },
   render() {
     var data = this.collection.map((model) => {
       var itClass = (model.get('isActive'))
@@ -59,6 +59,12 @@ module.exports = React.createClass({
                         <CodeEditor language="javascript" codeText={view} />
                     </div>
                 </div>
+                <Notes notes={[
+                    'selector d events',
+                    'viewmodel / class active',
+                    'double doucle',
+                    '(EACH) subset de javascript'
+                ]}/>
             </section>
         );
     }

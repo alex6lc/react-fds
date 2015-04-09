@@ -1,4 +1,5 @@
 var React = require('react');
+var Notes = require('../components/Notes');
 
 module.exports = React.createClass({
     render() {
@@ -14,15 +15,12 @@ module.exports = React.createClass({
                 <p className="fragment">Everything is a component</p>
                 <p className="fragment">Declarative vs <del>Imperative</del></p>
 
-                <aside className="notes">
-                    Agnostic d'ou provient le data ou de l'architecture
-                    <br />
-                    React render du UI et repond a des events du browser
-                    <br />
-                    Créer par l'équipe de publicité (annonce)
-                    <br />
-                    30kb de plus que jquery
-                </aside>
+                <Notes notes={[
+                    'Agnostic d\'ou provient le data ou de l\'architecture',
+                    'React render du UI et repond a des events du browser',
+                    'Créer par l\'équipe de publicité (annonce)',
+                    '30kb de plus que jquery'
+                ]} />
             </section>
         );
     }

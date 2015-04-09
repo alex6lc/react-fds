@@ -1,6 +1,6 @@
 var React = require('react');
 var CodeEditor = require('../components/CodeEditor');
-
+var Notes = require('../components/Notes');
 
 var es5arrow = `
 function Person() {
@@ -77,15 +77,12 @@ module.exports = React.createClass({
                     <div className="col-xs-1"></div>
                 </div>
 
-                <aside className="notes">
-                    Feature Freeze: aout 2014
-                    <br />
-                    Fini d'étre intégré en juin 2015
-                    <br />
-                    Binder au code entourant
-                    <br />
-                    Syntaxe plus épuré
-                </aside>
+                <Notes notes={[
+                    'Feature Freeze: aout 2014',
+                    'Fini d\'étre intégré en juin 2015',
+                    'Binder au code entourant',
+                    'Syntaxe plus épuré'
+                ]} />
             </section>
         );
     }

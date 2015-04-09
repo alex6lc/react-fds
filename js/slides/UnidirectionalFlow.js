@@ -2,6 +2,7 @@ var React = require('react');
 
 var Line = require('../components/Line');
 var Arrow = require('../components/Isomorphic/Arrow');
+var Notes = require('../components/Notes');
 
 var { unidirectional } = require('../styles');
 
@@ -61,13 +62,11 @@ module.exports = React.createClass({
                     { Circle(7, 10) }
                 </svg>
 
-                <aside className="notes">
-                    Props, propriétés, sont des parametre immutable passé d'un parent à ces enfants
-                    <br />
-                    State, c'est un sapshot a un certin temps donné.
-                    <br />
-                    Normalement à la suite d'un input d'un utilisateur
-                </aside>
+                <Notes notes={[
+                    'Props, propriétés, sont des parametre immutable passé d\'un parent à ces enfants',
+                    'State, c\'est un sapshot a un certin temps donné.',
+                    'Normalement à la suite d\'un input d\'un utilisateur'
+                ]} />
             </section>
         );
     }

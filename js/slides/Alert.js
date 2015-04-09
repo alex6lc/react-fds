@@ -1,4 +1,5 @@
 var React = require('react');
+var Notes = require('../components/Notes');
 
 module.exports = React.createClass({
     render() {
@@ -19,17 +20,13 @@ module.exports = React.createClass({
                     <div className="col-xs-3"></div>
                 </div>
 
-                <aside className="notes">
-                    gestionnaire recoit des alerts celon un set de regles precise
-                    <br/>
-                    Si un employer sur le terrain commence son appelle en retard
-                    <br/>
-                    3 états
-                    <br/>
-                    6 transitions (n ^ 2 - n)
-                    <br/>
-                    Modeler les transitions == facon imperative
-                </aside>
+                <Notes notes={[
+                    'gestionnaire recoit des alerts celon un set de regles precise',
+                    'Si un employer sur le terrain commence son appelle en retard',
+                    '3 états',
+                    '6 transitions (n ^ 2 - n)',
+                    'Modeler les transitions == facon imperative'
+                ]} />
             </section>
         );
     }

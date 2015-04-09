@@ -1,4 +1,5 @@
 var React = require('react');
+var Notes = require('../components/Notes');
 
 module.exports = React.createClass({
     render() {
@@ -6,11 +7,10 @@ module.exports = React.createClass({
             <section>
                 <h3>&#8593; Simplicity</h3>
                 <h3>&#8593; Reliability</h3>
-                <aside className="notes">
-                    Simple
-                    <br/>
-                    Fiable
-                </aside>
+                <Notes notes={[
+                    'Simple',
+                    'Fiable'
+                ]} />
             </section>
         );
     }

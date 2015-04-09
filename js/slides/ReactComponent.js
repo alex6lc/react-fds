@@ -1,5 +1,6 @@
 var React = require('react');
 var CodeEditor = require('../components/CodeEditor');
+var Notes = require('../components/Notes');
 
 var reactComponent = `
 module.exports = React.createClass({
@@ -33,6 +34,13 @@ module.exports = React.createClass({
             <section>
                 <h3>React Component</h3>
                 <CodeEditor language="javascript" codeText={reactComponent} />
+
+                <Notes notes={[
+                    'Logique d’affichage est étroitement coupler avec notre markup',
+                    'Modif dans un modif dans l autre',
+                    'Ils sont cohésif parce qu’il cherche a accomplir la même chose',
+                    'On sépare des technologies et non pas des préoccupations'
+                ]}/>
             </section>
         );
     }
