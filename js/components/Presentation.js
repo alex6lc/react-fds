@@ -104,8 +104,6 @@ module.exports = React.createClass({
                 <PropsAndStateTable />
                 <PropsValidation />
 
-                <DemoSearchInList />
-
                 <ComponentsNotTemplates />
                 <SeparationOfConcerns />
                 <HandlebarsAndView />
@@ -133,6 +131,8 @@ module.exports = React.createClass({
 
                 <FurtherReading />
                 <End />
+
+                <DemoSearchInList />
             </div>
         );
     }
